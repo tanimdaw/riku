@@ -39,8 +39,9 @@ group :development, :test do
 	gem 'guard-rspec'
 end
 
-group :production do 
-	gem 'rails_12factor'
+group :production, :staging do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 
