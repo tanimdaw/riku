@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.pikachoose
+//= require jquery.nivo.slider.pack
+//= require custom
 //= require_tree .

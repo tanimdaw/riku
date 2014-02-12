@@ -11,5 +11,8 @@
  *= require_self
  *= require styles
  *= require css3
+ *= require themes/default/default
+ *= require nivo-slider
+ *= require custom
  *= require_tree .
  */

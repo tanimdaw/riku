@@ -8,3 +8,11 @@ describe "CheckTitles" do
     end
   end
 end
+
+describe "NavLinks" do 
+	it "shoud contain required links" do 
+		visit root_path
+		page.find "#nav li", :text => "Home"
+		page.find "#nav li", :text => "Blog"
+	end
+end

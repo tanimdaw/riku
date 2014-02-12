@@ -20,7 +20,7 @@
  <!doctype html>  
 <head>
 <meta charset="UTF-8">
-<title>Riafkuopiop</title>
+<title>Riku</title>
 <link rel="icon" href="images/favicon.gif" type="image/x-icon"/>
  <!--[if lt IE 9]>
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,16 +54,15 @@
 	
    <!--start menu-->
 
-	<nav>
+	<nav id="nav">
     <ul>
-    <li><a href="#" class="current">Home</a>
-
+    <li>
+      <%= link_to "Home", "#", :class => "current" %>
 	</li>
-    <li><a href="#">About us</a></li>
-	<li><a href="#">Services</a></li>
-	<li><a href="#">Portfolio</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Contact</a></li>
+  <li>
+    <%= link_to "Blog", "#" %>
+  </li>
+    
 
     </ul>
     </nav>
@@ -78,9 +77,26 @@
 
    <div id="intro">
    
-   <div class="group_bannner_right">
+   <!-- <div class="group_bannner_right">
    <img src="images/picture.png" width="550" height="316"  alt="baner">
-   </div>
+   </div> -->
+
+  
+    <div id="sliderio" class="nivoSlider">
+      <%= image_tag 'riku/1.jpg', :width => "500px" %>
+      <%= image_tag 'riku/2.jpg', :width => "500px" %>
+      <%= image_tag 'riku/3.jpg', :width => "500px" %>
+      <%= image_tag 'riku/4.jpg', :width => "500px" %>
+      <%= image_tag 'riku/5.jpg', :width => "500px" %>
+      <%= image_tag 'riku/6.jpg', :width => "500px" %>
+      <%= image_tag 'riku/7.jpg', :width => "500px" %>
+      <%= image_tag 'riku/8.jpg', :width => "500px" %>
+    </div>
+    <div id="htmlcaption" class="nivo-html-caption">
+        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+    </div>
+
+
    
    <header class="group_bannner_left">
    <hgroup>
