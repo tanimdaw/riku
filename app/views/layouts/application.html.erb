@@ -1,23 +1,4 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Riku</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-</html>
- -->
-
-
-
-
- <!doctype html>  
+<!doctype html>  
 <head>
 <meta charset="UTF-8">
 <title>Riku</title>
@@ -49,7 +30,8 @@
     <header>
  
     <!--start logo-->
-      <%= link_to image_tag("logo.png", :width => "221", :height => "100", :alt => "logo") %>
+      <%#= link_to image_tag("logo.png", :width => "221", :height => "100", :alt => "logo") %>
+      <%= link_to image_tag("logo.gif", :alt => "logo") %>
 	  <!--end logo-->
 	
    <!--start menu-->
@@ -62,7 +44,9 @@
   <li>
     <%= link_to "Blog", "#" %>
   </li>
-    
+  <li>
+    <%= link_to "About Me", about_me_path %>
+  </li>  
 
     </ul>
     </nav>
@@ -72,119 +56,11 @@
     <!--end header-->
 	</header>
 
-
-   <!--start intro-->
-
-   <div id="intro">
+  <div style="clear: both;"></div>
+  <div class="container">
+    <%= yield %>
+  </div>
    
-   <!-- <div class="group_bannner_right">
-   <img src="images/picture.png" width="550" height="316"  alt="baner">
-   </div> -->
-
-  
-    <div id="sliderio" class="nivoSlider">
-      <%= image_tag 'riku/1.jpg', :width => "500px" %>
-      <%= image_tag 'riku/2.jpg', :width => "500px" %>
-      <%= image_tag 'riku/3.jpg', :width => "500px" %>
-      <%= image_tag 'riku/4.jpg', :width => "500px" %>
-      <%= image_tag 'riku/5.jpg', :width => "500px" %>
-      <%= image_tag 'riku/6.jpg', :width => "500px" %>
-      <%= image_tag 'riku/7.jpg', :width => "500px" %>
-      <%= image_tag 'riku/8.jpg', :width => "500px" %>
-    </div>
-    <div id="htmlcaption" class="nivo-html-caption">
-        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
-    </div>
-
-
-   
-   <header class="group_bannner_left">
-   <hgroup>
-   <h1>Simple.Think. </h1>
-   <h2>“The little things are infinitely the most important.“ 
-   </h2>
-   </hgroup>
-   </header>
-   </div>
-   <!--end intro-->
-
-   
-   
-   <!--start holder-->
-
-   <div class="holder_content">
-   
-   <section class="group1">
-   <h3>About us</h3>
-   	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
-	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-    <a href=""><span class="read_more">Read more...</span></a>
-
-	</section>
-	
-
-     
-   <section class="group2">
-   <h3>Services</h3>
-   	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
-	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-	<a href=""><span class="read_more">Read more ...</span></a>
-
-	</section>
-
-
-       
-   <section class="group3">
-   <h3>News</h3>
-   	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
-	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-	<a href=""><span class="read_more">Read more...</span></a>
-
-	</section>
-
-  
-   </div>
-   <!--end holder-->
-   
-   <!--start holder-->
-
-   <div class="holder_content1">
-    <section class="group4">
-   <h3>Gallery</h3>
-   	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
-	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-    <div class="pikachoose">
-	<ul id="pikame" >
-		<li><a href="#"><img src="images/picture3.jpg" width="500" height="250"  alt="picture"/></a><span>“Simplicity is the nature of great souls.”</span></li>
-		<li><a href="#"><img src="images/picture2.jpg" width="500" height="250" alt="picture"/></a><span>“The little things are infinitely the most important. “ </span></li>
-		<li><a href="#"><img src="images/picture1.jpg" width="500" height="250" alt="picture"/></a><span>“Simplicity is the essence of happiness.”</span></li>
-	   </ul>
-       </div>
-
-	</section>
-
-
-       
-   <section class="group5">
-   <h3>Testimonials</h3>
-   	<p><span class="purple">1)</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
-	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-      	<p><span class="purple">2)</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
-	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-   	<p><span class="purple">3)</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
-	Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-
-
-	</section>
-
-   
-    </div>
-    <!--end holder-->
-
-   
-   
-    </div>
-   <!--end container-->
    
    <!--start footer-->
    <footer>

@@ -1,4 +1,38 @@
-/*#slider {
-	overflow: hidden;
-	position: absolute;
-}*/
+/*
+==========================
+Home Page
+=========================
+*/
+
+div.container {
+	 min-height: 500px;
+	 margin-top: 30px;
+}
+
+
+h1.myname {
+	font-size: 22px;
+	margin-left: 0;
+}
+
+p.quote {
+	font-size: 18px;
+	font-style: italic;
+	color: #727170;
+}
+
+p.quote span {
+	font-size: 25px;
+	color: #cccccc;
+}
+
+/*
+==========================
+About Me Page
+=========================
+*/
+
+.about_me_image {
+	float: left;
+	margin: 10px;
+}
